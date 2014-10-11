@@ -16,4 +16,5 @@ public class Ids
 		public static final int itemButteredPotato = 16006;
 		public static final int itemDamnHardButterID = 16007;
 		public static final int itemButterNuggetID = 16008;
+		public static final int itemDamnHardButterNuggetID = 16009;
 	}

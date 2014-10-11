@@ -64,10 +64,13 @@ public class Recipes
 						new Object[]{" B ", " S ", " S ", 'B',
 								Items.damnHardButter, 'S', Item.stick});
 
-				GameRegistry
-						.addRecipe(new ItemStack(Items.butter, 1),
-								new Object[]{"BBB", "BBB", "B", 'B',
-										Items.butterNugget});
+				GameRegistry.addRecipe(new ItemStack(Items.butter, 1),
+						new Object[]{"BBB", "BBB", "BBB", 'B',
+								Items.butterNugget});
+
+				GameRegistry.addRecipe(new ItemStack(Items.damnHardButter, 1),
+						new Object[]{"BBB", "BBB", "BBB", 'B',
+								Items.damnHardButterNugget});
 
 				// Gem
 				// This is a shapeless recipe, so we don't need to use the grid.
@@ -87,6 +90,10 @@ public class Recipes
 				GameRegistry.addShapelessRecipe(new ItemStack(
 						Items.butterNugget, 9), new Object[]{Items.butter});
 
+				GameRegistry.addShapelessRecipe(new ItemStack(
+						Items.damnHardButterNugget, 9),
+						new Object[]{Items.damnHardButter});
+
 				// Smelting Recipes
 				int rubyOre = Blocks.rubyOre.blockID;
 				ItemStack rubyItem = new ItemStack(Items.ruby, 1);
@@ -98,6 +105,13 @@ public class Recipes
 				float xpGiven2 = 1F;
 				GameRegistry.addSmelting(milk, butterItem, xpGiven2);
 
-				// Pulvrizing Recipes
+				// Inducting Recipes
+				ThermalExpansionHelper.addSmelterRecipe(5000, new ItemStack(
+						Items.butter, 1), new ItemStack(Item.ingotIron, 1),
+						new ItemStack(Items.damnHardButter, 1));
+
+				// Pulverizing Recipes
+				ThermalExpansionHelper.addPulverizerRecipe(5000, new ItemStack(
+						Item.bucketMilk, 1), new ItemStack(Items.butter, 4));
 			}
 	}

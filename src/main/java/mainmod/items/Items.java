@@ -24,6 +24,8 @@ public class Items
 				Ids.itemDamnHardButterID);
 		public static final Item butterNugget = new ButterNugget(
 				Ids.itemButterNuggetID);
+		public static final Item damnHardButterNugget = new DamnHardButterNugget(
+				Ids.itemDamnHardButterNuggetID);
 
 		public static void init()
 			{
@@ -36,6 +38,7 @@ public class Items
 				addItem(butteredPotato, "Buttered Potato");
 				addItem(damnHardButter, "Damn Hard Butter");
 				addItem(butterNugget, "Butter Nugget");
+				addItem(damnHardButterNugget, "Damn Hard Butter Nugget");
 			}
 		public static void addItem(Item item, String name)
 			{

@@ -1,0 +1,29 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# Explicit paths specified without -i or -o; assuming --only paths...
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   src/main/java/MainMods/MainMod.java
+#	new file:   src/main/java/mainmod/blocks/BlockRuby.java
+#	new file:   src/main/java/mainmod/blocks/Blocks.java
+#	new file:   src/main/java/mainmod/blocks/ores/BlockRubyOre.java
+#	new file:   src/main/java/mainmod/items/ButterAxe.java
+#	new file:   src/main/java/mainmod/items/ButterHoe.java
+#	new file:   src/main/java/mainmod/items/ButterNugget.java
+#	new file:   src/main/java/mainmod/items/ButterPickaxe.java
+#	new file:   src/main/java/mainmod/items/ButterShovel.java
+#	new file:   src/main/java/mainmod/items/ButteredPotato.java
+#	new file:   src/main/java/mainmod/items/ItemButter.java
+#	new file:   src/main/java/mainmod/items/ItemDamnHardButter.java
+#	new file:   src/main/java/mainmod/items/ItemRuby.java
+#	new file:   src/main/java/mainmod/items/Items.java
+#	new file:   src/main/java/mainmod/lib/Ids.java
+#	new file:   src/main/java/mainmod/lib/ModInfo.java
+#	new file:   src/main/java/mainmod/lib/Recipes.java
+#	new file:   src/main/java/mainmod/proxies/ClientProxy.java
+#	new file:   src/main/java/mainmod/proxies/CommonProxy.java
+#
+
