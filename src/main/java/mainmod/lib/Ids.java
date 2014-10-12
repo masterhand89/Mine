@@ -6,6 +6,8 @@ public class Ids
 		public static final int blockRubyID = 1000;
 		public static final int blockRubyOreID = 1001;
 		public static final int blockDamnHardButterOreID = 1002;
+		public static final int blockDamnHardButterNetherOreID = 1003;
+		public static final int itemPeanutPlant = 1004;
 
 		// Items
 		public static final int itemRubyID = 16000;
@@ -20,4 +22,7 @@ public class Ids
 		public static final int itemDamnHardButterNuggetID = 16009;
 		public static final int itemDamnHardButterSwordID = 16010;
 		public static final int itemDamnHardButterBowID = 16011;
+		public static final int itemPeanutID = 16012;
+		public static final int itemBottleOfPeanutButterID = 16013;
+		public static final int itemDamnHardButterDustID = 16014;
 	}

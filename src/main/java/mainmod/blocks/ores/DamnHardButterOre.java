@@ -3,6 +3,7 @@ package mainmod.blocks.ores;
 import java.util.Random;
 
 import mainmod.items.Items;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockOre;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.world.World;
@@ -19,6 +20,7 @@ public class DamnHardButterOre extends BlockOre
 				this.setHardness(1.2F);
 				this.setResistance(2.0F);
 				MinecraftForge.setBlockHarvestLevel(this, "pickaxe", 2);
+				this.setStepSound(Block.soundStoneFootstep);
 			}
 
 		@Override

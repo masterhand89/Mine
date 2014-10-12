@@ -41,37 +41,62 @@ public class Recipes
 				GameRegistry.addRecipe(new ItemStack(Blocks.rubyBlock, 1),
 						new Object[]{"RRR", "RRR", "RRR", 'R', Items.ruby});
 
+				// Butter Pickaxe
 				GameRegistry.addRecipe(new ItemStack(Items.butterPickaxe),
 						new Object[]{"BBB", " S ", " S ", 'B',
 								Items.damnHardButter, 'S', Item.stick});
 
+				// Butter Axe
 				GameRegistry.addRecipe(new ItemStack(Items.butterAxe, 1),
 						new Object[]{"BB ", "BS ", " S ", 'B',
 								Items.damnHardButter, 'S', Item.stick});
 
+				// Butter Axe
 				GameRegistry.addRecipe(new ItemStack(Items.butterAxe, 1),
 						new Object[]{" BB", " SB", " S ", 'B',
 								Items.damnHardButter, 'S', Item.stick});
 
+				// Butter Hoe
 				GameRegistry.addRecipe(new ItemStack(Items.butterHoe, 1),
 						new Object[]{" BB", " S ", " S ", 'B',
 								Items.damnHardButter, 'S', Item.stick});
+
+				// Butter Hoe
 				GameRegistry.addRecipe(new ItemStack(Items.butterHoe, 1),
 						new Object[]{"BB ", " S ", " S ", 'B',
 								Items.damnHardButter, 'S', Item.stick});
 
+				// Butter Shovel
 				GameRegistry.addRecipe(new ItemStack(Items.butterShovel, 1),
 						new Object[]{" B ", " S ", " S ", 'B',
 								Items.damnHardButter, 'S', Item.stick});
 
+				// Butter Nugget
 				GameRegistry.addRecipe(new ItemStack(Items.butter, 1),
 						new Object[]{"BBB", "BBB", "BBB", 'B',
 								Items.butterNugget});
 
+				// Damn Hard Butter Nugget
 				GameRegistry.addRecipe(new ItemStack(Items.damnHardButter, 1),
 						new Object[]{"BBB", "BBB", "BBB", 'B',
 								Items.damnHardButterNugget});
 
+				// Damn Hard Butter Sword
+				GameRegistry.addRecipe(new ItemStack(Items.damnHardButterSword,
+						1), new Object[]{" B ", " B ", " S ", 'B',
+						Items.damnHardButter, 'S', Item.stick});
+
+				// Bottle of Peanut Butter
+				GameRegistry.addRecipe(new ItemStack(
+						Items.bottleOfPeanutButter, 1), new Object[]{"BB ",
+						"PP ", "G  ", 'B', Items.butter, 'P', Items.peanut,
+						'G', Item.glassBottle});
+
+				// Damn Hard butter Bow
+				GameRegistry.addRecipe(
+						new ItemStack(Items.damnHardButterBow, 1),
+						new Object[]{" BS", "B S", " BS", 'B',
+								Items.damnHardButter, 'S', Item.silk});
 				// Gem
 				// This is a shapeless recipe, so we don't need to use the grid.
 				// We just
@@ -83,13 +108,16 @@ public class Recipes
 				GameRegistry.addShapelessRecipe(new ItemStack(Items.ruby, 9),
 						new Object[]{Blocks.rubyBlock});
 
+				// Buttered Potato
 				GameRegistry.addShapelessRecipe(new ItemStack(
 						Items.butteredPotato, 1), new Object[]{
 						Item.bakedPotato, Items.butter});
 
+				// Butter Nugget
 				GameRegistry.addShapelessRecipe(new ItemStack(
 						Items.butterNugget, 9), new Object[]{Items.butter});
 
+				// Damn Hard Butter Nugget
 				GameRegistry.addShapelessRecipe(new ItemStack(
 						Items.damnHardButterNugget, 9),
 						new Object[]{Items.damnHardButter});
@@ -100,18 +128,35 @@ public class Recipes
 				float xpGiven1 = 5F;
 				GameRegistry.addSmelting(rubyOre, rubyItem, xpGiven1);
 
+				// Butter
 				int milk = Item.bucketMilk.itemID;
 				ItemStack butterItem = new ItemStack(Items.butter, 1);
 				float xpGiven2 = 1F;
 				GameRegistry.addSmelting(milk, butterItem, xpGiven2);
 
 				// Inducting Recipes
+
+				// Damn Hard Butter
 				ThermalExpansionHelper.addSmelterRecipe(5000, new ItemStack(
 						Items.butter, 1), new ItemStack(Item.ingotIron, 1),
 						new ItemStack(Items.damnHardButter, 1));
 
 				// Pulverizing Recipes
+
+				// Butter
 				ThermalExpansionHelper.addPulverizerRecipe(5000, new ItemStack(
 						Item.bucketMilk, 1), new ItemStack(Items.butter, 4));
+
+				// Damn Hard Butter Dust
+				ThermalExpansionHelper.addPulverizerRecipe(5000, new ItemStack(
+						Blocks.damnHardButterNetherOre, 1), new ItemStack(
+						Items.damnHardButterDust, 1));
+
+				// Furnace Recipes
+
+				// Damn Hard Butter
+				ThermalExpansionHelper.addFurnaceRecipe(5000, new ItemStack(
+						Items.damnHardButterDust, 1), new ItemStack(
+						Items.damnHardButter, 1));
 			}
 	}

@@ -30,6 +30,11 @@ public class Items
 				Ids.itemDamnHardButterSwordID, EnumToolMaterial.IRON);
 		public static final Item damnHardButterBow = new DamnHardButterBow(
 				Ids.itemDamnHardButterBowID);
+		public static final Item peanut = new Peanut(Ids.itemPeanutID);
+		public static final Item bottleOfPeanutButter = new BottleOfPeanutButter(
+				Ids.itemBottleOfPeanutButterID);
+		public static final Item damnHardButterDust = new DamnHardButterDust(
+				Ids.itemDamnHardButterDustID);
 
 		public static void init()
 			{
@@ -45,6 +50,9 @@ public class Items
 				addItem(damnHardButterNugget, "Damn Hard Butter Nugget");
 				addItem(damnHardButterSword, "Damn Hard Butter Sword");
 				addItem(damnHardButterBow, "Damn Hard Butter Bow");
+				addItem(peanut, "Peanut");
+				addItem(bottleOfPeanutButter, "Bottle of Peanut Butter");
+				addItem(damnHardButterDust, "Damn Hard Butter Dust");
 			}
 		public static void addItem(Item item, String name)
 			{
